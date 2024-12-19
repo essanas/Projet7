@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy', '--quiet']
+  env:
+  - 'MODEL_PATH=runs:/d467779f7ddd4631a42238378ee3df2d/bert_model'

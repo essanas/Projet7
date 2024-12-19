@@ -14,6 +14,7 @@ nest_asyncio.apply()
 mlflow_tracking_uri = os.getenv("MLFLOW_TRACKING_URI", "http://127.0.0.1:5000")
 model_path = os.getenv("MODEL_PATH", "runs:/b9edb24e191946b98da2cd76fbb0d5c1/bert_model")
 
+
 # Configurer l'URI de suivi MLflow
 mlflow.set_tracking_uri(mlflow_tracking_uri)
 
