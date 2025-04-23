@@ -3,3 +3,10 @@ __pycache__/
 mlruns/
 mlartifacts/
 .env
+# macOS
+.DS_Store
+
+# données et artefacts
+*.csv
+*.png
+*.ipynb
