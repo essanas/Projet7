@@ -9,6 +9,6 @@ Models_mlflow_ne.ipynb
 .DS_Store
 
 # données et artefacts
-*.csv
+# *.csv
 *.png
 # *.ipynb
