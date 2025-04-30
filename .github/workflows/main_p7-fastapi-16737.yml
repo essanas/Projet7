@@ -78,4 +78,6 @@ jobs:
         with:
           app-name: 'p7-fastapi-16737'
           slot-name: 'Production'
-          
+          resource-group: 'p7-rg'          # ton RG
+          package: release.zip             # l’artefact créé plus haut
+          startup-command: ./startup.sh    # ← lance gunicorn / FastAPI
