@@ -1,6 +1,11 @@
 fastapi
 uvicorn[standard]
+gunicorn
 pandas
 scikit-learn
 joblib
 mlflow
+torch
+
+
+
