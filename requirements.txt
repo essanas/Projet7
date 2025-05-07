@@ -5,5 +5,5 @@ pandas
 scikit-learn
 joblib
 mlflow
-torch==2.1.0+cpu
+torch==2.2.0+cpu
 --extra-index-url https://download.pytorch.org/whl/cpu
