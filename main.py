@@ -88,6 +88,9 @@ async def predict(inp: TweetInput) -> dict:
 
 # ─────────────────────── Lancement local ─────────────────── #
 if __name__ == "__main__":
+    import os
+    port = int(os.getenv("PORT", 8080))  # 8080 par défaut sur cloud
     uvicorn.run("main:app",
                 host="0.0.0.0",
-                port=int(os.getenv("PORT", 8000)))
+                port=port)
+
