@@ -1,3 +1,5 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 fastapi
 uvicorn[standard]
 gunicorn
@@ -7,4 +9,3 @@ joblib
 mlflow
 torch==2.2.0+cpu
 transformers
---extra-index-url https://download.pytorch.org/whl/cpu
