@@ -12,3 +12,26 @@ Models_mlflow_ne.ipynb
 # *.csv
 *.png
 # *.ipynb
+
+# Environnements virtuels
+venv/
+env/
+.venv/
+
+# Fichiers de l'éditeur
+.vscode/
+.idea/
+
+# Fichiers compilés
+*.pyo
+*.pyd
+*.so
+
+# Fichiers de build Docker et cache
+*.tar
+*.log
+*.bak
+*.old
+
+# Cache Transformers/HuggingFace
+.cache/
