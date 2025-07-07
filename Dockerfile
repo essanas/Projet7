@@ -19,5 +19,8 @@ RUN python -c "from transformers import BertTokenizer; BertTokenizer.from_pretra
 # 6. Port exposé pour Cloud Run
 EXPOSE 8080
 
-# 7. Commande de lancement
+# 7. Vérification des fichiers présents
+RUN ls -lh /app
+
+# 8. Commande de lancement
 CMD ["uvicorn", "main_pt:app", "--host", "0.0.0.0", "--port", "8080"]

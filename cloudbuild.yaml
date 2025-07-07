@@ -1,5 +1,6 @@
 options:
   logging: CLOUD_LOGGING_ONLY
+
 steps:
   # Étape 1 : Build de l'image Docker
   - name: 'gcr.io/cloud-builders/docker'
@@ -9,7 +10,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/$PROJECT_ID/fastapi-app']
 
-  # Étape 3 : Déploiement sur Cloud Run
+  # Étape 3 : Déploiement sur Cloud Run avec timeout étendu
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
       - 'run'
@@ -22,6 +23,5 @@ steps:
       - '--platform'
       - 'managed'
       - '--allow-unauthenticated'
-
-images:
-  - 'gcr.io/$PROJECT_ID/fastapi-app'
+      - '--timeout'
+      - '900'  # 15 minutes
